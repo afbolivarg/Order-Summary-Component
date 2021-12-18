@@ -80,6 +80,10 @@ main {
   color: var(--bright-blue);
   font-weight: 700;
 }
+.plan .change-plan:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
 .proceed-payment {
   background-color: var(--bright-blue);
   border-radius: 10px;
@@ -92,6 +96,9 @@ main {
   margin-top: 24px;
   box-shadow: 0 10px 20px 0px var(--desaturated-blue);
 }
+.proceed-payment:hover {
+  opacity: 0.7;
+}
 .cancel-order {
   font-size: 16px;
   font-family: 'Red Hat Display', sans-serif;
@@ -102,4 +109,7 @@ main {
   font-weight: 900;
   margin-bottom: 28px;
   padding: 14px 0;
+}
+.cancel-order:hover {
+  color: var(--dark-blue);
 }
