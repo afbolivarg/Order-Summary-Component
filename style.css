@@ -1,0 +1,105 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--pale-blue);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.order-container {
+  width: 90%;
+  max-width: 380px;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 10px 20px 0px var(--desaturated-blue);
+}
+.bg-illustration {
+  border-radius: 22px 22px 0 0;
+  width: 100%;
+  object-fit: cover;
+}
+.order-container .summary {
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0 0 22px 22px;
+}
+.title {
+  font-size: 22px;
+  color: var(--dark-blue);
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+.description {
+  color: var(--desaturated-blue);
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  line-height: 24px;
+}
+.plan {
+  background-color: var(--very-pale-blue);
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 20px;
+}
+.plan p {
+  margin-left: 20px;
+}
+.plan .selected-plan {
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+.plan .price {
+  color: var(--desaturated-blue);
+}
+.plan .change-plan {
+  color: var(--bright-blue);
+  font-weight: 700;
+}
+.proceed-payment {
+  background-color: var(--bright-blue);
+  border-radius: 10px;
+  padding: 14px 0;
+  color: white;
+  border: none;
+  font-weight: 900;
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+  margin-top: 24px;
+  box-shadow: 0 10px 20px 0px var(--desaturated-blue);
+}
+.cancel-order {
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+  margin-top: 16px;
+  border: none;
+  color: var(--desaturated-blue);
+  background-color: transparent;
+  font-weight: 900;
+  margin-bottom: 28px;
+  padding: 14px 0;
+}
